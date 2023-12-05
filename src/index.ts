@@ -4,6 +4,7 @@ import { solve01p1, solve01p2 } from "./d01";
 import { solve02p1, solve02p2 } from "./d02";
 import { solve03p1, solve03p2 } from "./d03";
 import { solve04p1, solve04p2 } from "./d04";
+import { solve05p1, solve05p2 } from "./d05";
 
 (() => {
     const test = false;
@@ -23,7 +24,9 @@ import { solve04p1, solve04p2 } from "./d04";
         .trim()
         .split("\n");
 
-    const val = solve04p2(data);
+    console.time();
+    const val = solve05p2(data);
     console.log("answer", val);
+    console.timeEnd();
     console.log("done");
 })();
