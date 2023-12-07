@@ -36,7 +36,7 @@ export function solve03p1(input: string[]): number {
                 curNum = curNum * 10 + cell;
             }
 
-            if (Number.isNaN(cell) || x == input[y].length - 1) {
+            if (Number.isNaN(cell) || x === input[y].length - 1) {
                 if (adjacent) {
                     ans += curNum;
                     adjacent = false;
@@ -92,7 +92,7 @@ export function solve03p2(input: string[]): number {
                 curNum = curNum * 10 + cell;
             }
 
-            if (Number.isNaN(cell) || x == input[y].length - 1) {
+            if (Number.isNaN(cell) || x === input[y].length - 1) {
                 for (const curNumStar of curNumStars) {
                     const key = curNumStar[0] * 1000 + curNumStar[1];
                     const value = starMap.get(key) ?? [];
@@ -106,7 +106,7 @@ export function solve03p2(input: string[]): number {
     }
 
     for (const [k, v] of starMap) {
-        if (v.length == 2) {
+        if (v.length === 2) {
             ans += v[0] * v[1];
         }
     }

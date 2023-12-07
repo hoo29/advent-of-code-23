@@ -9,7 +9,7 @@ function getMap(key: string, input: string[]): [number, number, number][] {
     let end = start + 1;
     while (end < input.length) {
         const line = input[end];
-        if (input[end] == "") {
+        if (input[end] === "") {
             break;
         }
         items.push(
