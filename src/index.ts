@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import fs from "fs";
 import path from "path";
 import { solve01p1, solve01p2 } from "./d01";

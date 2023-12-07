@@ -44,12 +44,6 @@ export function solve02p1(input: string[]): number {
 }
 
 export function solve02p2(input: string[]): number {
-    const possible = {
-        red: 12,
-        green: 13,
-        blue: 14,
-    };
-
     let ans = 0;
 
     for (const line of input) {

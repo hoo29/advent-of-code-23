@@ -105,7 +105,7 @@ export function solve03p2(input: string[]): number {
         }
     }
 
-    for (const [k, v] of starMap) {
+    for (const [, v] of starMap) {
         if (v.length === 2) {
             ans += v[0] * v[1];
         }
