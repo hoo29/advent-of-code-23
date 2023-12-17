@@ -1,5 +1,6 @@
 {
     "files.associations": {
         "**/data/days/**/*": "plaintext"
-    }
+    },
+    "debug.console.collapseIdenticalLines": false
 }
