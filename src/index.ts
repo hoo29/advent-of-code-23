@@ -18,6 +18,7 @@ import { solve14p1, solve14p2 } from "./d14";
 import { solve15p1, solve15p2 } from "./d15";
 import { solve16p1, solve16p2 } from "./d16";
 import { solve17p1, solve17p2 } from "./d17";
+import { solve18p1, solve18p2 } from "./d18";
 
 (() => {
     const test = false;
@@ -38,7 +39,7 @@ import { solve17p1, solve17p2 } from "./d17";
         .split("\n");
 
     console.time();
-    const val = solve17p2(data);
+    const val = solve18p2(data);
     console.log("answer", Number(val).toLocaleString("fullwide", { useGrouping: false }));
     console.timeEnd();
     console.log("done");
