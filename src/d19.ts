@@ -186,21 +186,15 @@ export function solve19p2(input: string[]): number {
                 constraints[subRule.partComponent][newOp].push(newAmount);
             }
 
-            if (!isRule(rule)) {
-                queue.push({
-                    name: rule.action,
-                    path: [...item.path, item.name],
-                    constraints,
-                });
-            } else {
-                const newConstraints = JSON.parse(JSON.stringify(constraints)) as Constraints;
-                newConstraints[rule.partComponent][rule.condition].push(rule.amount);
-                queue.push({
-                    name: rule.action,
-                    path: [...item.path, item.name],
-                    constraints: newConstraints,
-                });
+            if (isRule(rule)) {
+                constraints[rule.partComponent][rule.condition].push(rule.amount);
             }
+
+            queue.push({
+                name: rule.action,
+                path: [...item.path, item.name],
+                constraints,
+            });
         }
     }
 

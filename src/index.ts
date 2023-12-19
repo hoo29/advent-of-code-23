@@ -20,11 +20,13 @@ import { solve16p1, solve16p2 } from "./d16";
 import { solve17p1, solve17p2 } from "./d17";
 import { solve18p1, solve18p2 } from "./d18";
 import { solve19p1, solve19p2 } from "./d19";
+import { solve20p1, solve20p2 } from "./d20";
 
 (() => {
     const test = false;
     const daysDir = path.join(__dirname, "..", "data", "days");
-    const day = fs.readdirSync(daysDir).sort().pop();
+    // const day = fs.readdirSync(daysDir).sort().pop();
+    const day = "19";
 
     if (typeof day === "undefined") {
         throw new Error("immediate failure");
