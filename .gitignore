@@ -130,5 +130,5 @@ dist
 .pnp.*
 .gitconfig
 dist
-data/**/input
+data/**/input*
 why

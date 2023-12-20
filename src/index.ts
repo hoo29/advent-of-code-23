@@ -25,8 +25,7 @@ import { solve20p1, solve20p2 } from "./d20";
 (() => {
     const test = false;
     const daysDir = path.join(__dirname, "..", "data", "days");
-    // const day = fs.readdirSync(daysDir).sort().pop();
-    const day = "19";
+    const day = fs.readdirSync(daysDir).sort().pop();
 
     if (typeof day === "undefined") {
         throw new Error("immediate failure");
@@ -42,7 +41,7 @@ import { solve20p1, solve20p2 } from "./d20";
         .split("\n");
 
     console.time();
-    const val = solve19p2(data);
+    const val = solve20p2(data);
     console.log("answer", Number(val).toLocaleString("fullwide", { useGrouping: false }));
     console.timeEnd();
     console.log("done");
