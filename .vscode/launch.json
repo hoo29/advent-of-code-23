@@ -12,7 +12,9 @@
             "runtimeExecutable": "npm",
             "runtimeArgs": ["run", "dev"],
             "smartStep": true,
-            "restart": true
+            "restart": true,
+            "autoAttachChildProcesses": true,
+            "killBehavior": "forceful"
         }
     ]
 }

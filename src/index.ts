@@ -22,6 +22,10 @@ import { solve18p1, solve18p2 } from "./d18";
 import { solve19p1, solve19p2 } from "./d19";
 import { solve20p1, solve20p2 } from "./d20";
 import { solve21p1, solve21p2 } from "./d21";
+import { solve22p1, solve22p2 } from "./d22";
+import { solve23p1, solve23p2 } from "./d23";
+import { solve24p1, solve24p2 } from "./d24";
+import { solve25p1 } from "./d25";
 
 (() => {
     const test = false;
@@ -42,8 +46,11 @@ import { solve21p1, solve21p2 } from "./d21";
         .split("\n");
 
     console.time();
-    const val = solve21p2(data);
+    // console.profile();
+    // eslint-disable-next-line @typescript-eslint/await-thenable
+    const val = solve25p1(data);
     console.log("answer", Number(val).toLocaleString("fullwide", { useGrouping: false }));
     console.timeEnd();
+    // console.profileEnd();
     console.log("done");
 })();

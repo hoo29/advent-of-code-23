@@ -132,3 +132,4 @@ dist
 dist
 data/**/input*
 why
+*.cpuprofile
